@@ -1,0 +1,22 @@
+{
+  "name": "rbncha/order-email-image",
+  "description": "A Magento 2 module that adds product images in order emails. It creates a new sliced product image to avoid loss of image link by cache flush/clean.",
+  "type": "magento2-module",
+  "version": "1.0.0",
+  "license": [
+    "OSL-3.0",
+    "AFL-3.0"
+  ],
+  "require": {
+    "php": "~5.5.0|~5.6.0|~7.0.0",
+    "magento/framework": "~100.0.4",
+    "magento/module-sales": "100.0.*",
+    "magento/module-directory": "100.0.*"
+  },
+  "autoload": {
+    "files": [ "registration.php" ],
+    "psr-4": {
+      "Rbncha\\OrderEmailImage\\": ""
+    }
+  }
+}
